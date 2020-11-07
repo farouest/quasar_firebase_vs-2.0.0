@@ -57,12 +57,12 @@ export default {
         return {
             leftDrawerOpen: this.$q.platform.is.desktop,
             navs: [{
-                    label: 'Todo',
+                    label: 'Vos infos perso',
                     icon: 'list',
                     to: '/'
                 },
                 {
-                    label: 'Settings',
+                    label: 'Paramètre',
                     icon: 'settings',
                     to: '/settings'
                 }
