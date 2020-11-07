@@ -1,7 +1,7 @@
 <template>
 	<q-card>
     
-    <modal-header>Add Task</modal-header>
+    <modal-header>+ votre information</modal-header>
 
 		<form @submit.prevent="submitForm">
 	    <q-card-section>
