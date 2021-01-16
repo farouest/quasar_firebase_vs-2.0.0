@@ -1,54 +1,50 @@
 <template>
-	<q-card>
-    
-    <modal-header>+ votre information</modal-header>
+<q-card>
 
-		<form @submit.prevent="submitForm">
-	    <q-card-section>
-	    	
-	    	<modal-task-name 
-	    		:name.sync="taskToSubmit.name"
-	    		ref="modalTaskName" />
+    <modal-header>+ Votre information</modal-header>
 
-				<modal-due-date 
-					:dueDate.sync="taskToSubmit.dueDate"
-					@clear="clearDueDate" />
+    <form @submit.prevent="submitForm">
+        <q-card-section>
 
-				<modal-due-time
-					v-if="taskToSubmit.dueDate"
-					:dueTime.sync="taskToSubmit.dueTime" />
+            <modal-task-name :name.sync="taskToSubmit.name" ref="modalTaskName" />
 
-	    </q-card-section>
+            <modal-due-date :dueDate.sync="taskToSubmit.dueDate" @clear="clearDueDate" />
 
-			<modal-buttons></modal-buttons>	    
+            <modal-due-time v-if="taskToSubmit.dueDate" :dueTime.sync="taskToSubmit.dueTime" />
 
-		</form>
+        </q-card-section>
 
-  </q-card>
+        <modal-buttons></modal-buttons>
+
+    </form>
+
+</q-card>
 </template>
 
 <script>
-	import { mapActions } from 'vuex'
-	import mixinAddEditTask from 'src/mixins/mixin-add-edit-task'
+import {
+    mapActions
+} from 'vuex'
+import mixinAddEditTask from 'src/mixins/mixin-add-edit-task'
 
-	export default {
-		mixins: [mixinAddEditTask],
-		data() {
-			return {
-				taskToSubmit: {
-					name: '',
-					dueDate: '',
-					dueTime: '',
-					completed: false
-				}
-			}
-		},
-		methods: {
-			...mapActions('tasks', ['addTask']),
-			submitTask() {
-				this.addTask(this.taskToSubmit)
-				this.$emit('close')
-			}
-		}
-	}
+export default {
+    mixins: [mixinAddEditTask],
+    data() {
+        return {
+            taskToSubmit: {
+                name: '',
+                dueDate: '',
+                dueTime: '',
+                completed: false
+            }
+        }
+    },
+    methods: {
+        ...mapActions('tasks', ['addTask']),
+        submitTask() {
+            this.addTask(this.taskToSubmit)
+            this.$emit('close')
+        }
+    }
+}
 </script>
