@@ -11,10 +11,18 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+<<<<<<< HEAD
 # Editor directories and files
+=======
+# Editor directories and files test
+>>>>>>> f73a9c90db8a53bf6e9709e1763e643b1f013b62
 .idea
 .vscode
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
+<<<<<<< HEAD
+=======
+node_modules
+>>>>>>> f73a9c90db8a53bf6e9709e1763e643b1f013b62

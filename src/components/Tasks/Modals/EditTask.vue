@@ -1,7 +1,7 @@
 <template>
 	<q-card>
     
-    <modal-header>Edit Task</modal-header>
+    <modal-header>Editer votre infos</modal-header>
 
 		<form @submit.prevent="submitForm">
 	    <q-card-section>

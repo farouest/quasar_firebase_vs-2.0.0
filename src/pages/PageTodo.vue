@@ -9,7 +9,11 @@
                 <sort />
             </div>
 
+<<<<<<< HEAD
             <p v-if="search && !Object.keys(tasksTodo).length && !Object.keys(tasksCompleted).length">Pas de résultat.</p>
+=======
+  			<p v-if="search && !Object.keys(tasksTodo).length && !Object.keys(tasksCompleted).length">Pas de résultats.</p>
+>>>>>>> f73a9c90db8a53bf6e9709e1763e643b1f013b62
 
             <q-scroll-area class="q-scroll-area-tasks">
                 <no-tasks v-if="!Object.keys(tasksTodo).length && !search && !settings.showTasksInOneList"></no-tasks>

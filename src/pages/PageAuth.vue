@@ -11,7 +11,7 @@
 		    narrow-indicator
 		  >
 		    <q-tab name="login" label="Login" />
-		    <q-tab name="register" label="Register" />
+		    <q-tab name="register" label="Enregistrement" />
 		  </q-tabs>
 
 		  <q-separator />

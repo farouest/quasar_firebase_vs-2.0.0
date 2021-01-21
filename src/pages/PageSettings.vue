@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
 <q-page padding>
     <q-list class="q-mb-md" bordered padding>
         <q-item-label header>Paramètre</q-item-label>
@@ -20,6 +21,36 @@
                 <q-toggle v-model="showTasksInOneList" color="blue" />
             </q-item-section>
         </q-item>
+=======
+  <q-page padding>
+		<q-list
+			class="q-mb-md"
+			bordered
+			padding>
+		  <q-item-label header>Paramétre</q-item-label>
+
+		  <q-item tag="label" v-ripple>
+		    <q-item-section>
+		      <q-item-label>Activer le format horaire</q-item-label>
+		    </q-item-section>
+		    <q-item-section side >
+		      <q-toggle
+		      	v-model="show12HourTimeFormat"
+		      	color="blue" />
+		    </q-item-section>
+		  </q-item>
+
+		  <q-item tag="label" v-ripple>
+		    <q-item-section>
+		      <q-item-label>Activer vos informations en une liste</q-item-label>
+		    </q-item-section>
+		    <q-item-section side >
+		      <q-toggle
+		      	v-model="showTasksInOneList"
+		      	color="blue" />
+		    </q-item-section>
+		  </q-item>
+>>>>>>> f73a9c90db8a53bf6e9709e1763e643b1f013b62
 
     </q-list>
 

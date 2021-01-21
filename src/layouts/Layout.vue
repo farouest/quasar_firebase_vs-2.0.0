@@ -4,7 +4,11 @@
         <q-toolbar>
 
             <q-toolbar-title class="absolute-center">
+<<<<<<< HEAD
                 >--¨)°
+=======
+                >--°>
+>>>>>>> f73a9c90db8a53bf6e9709e1763e643b1f013b62
             </q-toolbar-title>
 
             <q-btn v-if="!loggedIn" to="/auth" flat icon-right="account_circle" label="Login" class="absolute-right" />
@@ -57,13 +61,21 @@ export default {
         return {
             leftDrawerOpen: this.$q.platform.is.desktop,
             navs: [{
+<<<<<<< HEAD
                     label: 'Votre liste',
                     label: 'Vos infos perso',
+=======
+                    label: 'Todo',
+>>>>>>> f73a9c90db8a53bf6e9709e1763e643b1f013b62
                     icon: 'list',
                     to: '/'
                 },
                 {
+<<<<<<< HEAD
                     label: 'Paramètre',
+=======
+                    label: 'Settings',
+>>>>>>> f73a9c90db8a53bf6e9709e1763e643b1f013b62
                     icon: 'settings',
                     to: '/settings'
                 }

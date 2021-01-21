@@ -18,7 +18,7 @@
 		  return {
 		    options: [
 		      {
-		      	label: 'Name',
+		      	label: 'Nom',
 		      	value: 'name'
 		      },
 		      {
